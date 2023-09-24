@@ -17,12 +17,12 @@
 # l2=l1
 # l2.append(6)
 # print(l1)
-i=0
-message =input('Please enter string ')
-for x in message:
-    if x in ['a','i','e','u','o']:
-        i=i+1
-print(i)
+# i=0
+# message =input('Please enter string ')
+# for x in message:
+#     if x in ['a','i','e','u','o']:
+#         i=i+1
+# print(i)
 
 
 # 2
@@ -83,3 +83,13 @@ print(i)
 
 
 # 6
+lines=input('Enter number of lines: ')
+if lines.isdigit():
+    lines=int(lines)
+    for i in range(lines):
+        print()
+        for j in range(i+1):
+            print("*", end="")
+    print()
+else:
+    print("Invalid input string must be a number")
